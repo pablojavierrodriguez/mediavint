@@ -1,10 +1,10 @@
-# MediaVint
+# Mediavint
 
-Este repositorio contiene el código fuente y documentación de la web **MediaVint**, agencia de comunicación digital.
+Este repositorio contiene el código fuente y documentación de la web **Mediavint**, agencia de comunicación digital.
 
 ## Contenido
 
-En este apartado encontrarás información detallada sobre el desarrollo, la arquitectura y el funcionamiento interno del sitio web **MediaVint**. Se incluyen descripciones de las tecnologías realmente utilizadas, la estructura de carpetas y archivos, así como guías para la instalación, configuración y despliegue del proyecto. Además, se proporcionan recomendaciones para contribuir al código, reportar incidencias y sugerir mejoras. El objetivo principal es ofrecer recursos útiles y documentación técnica tanto para usuarios interesados en conocer el proyecto como para desarrolladores que deseen colaborar activamente en su evolución.
+En este apartado encontrarás información detallada sobre el desarrollo, la arquitectura y el funcionamiento interno del sitio web **Mediavint**. Se incluyen descripciones de las tecnologías realmente utilizadas, la estructura de carpetas y archivos, así como guías para la instalación, configuración y despliegue del proyecto. Además, se proporcionan recomendaciones para contribuir al código, reportar incidencias y sugerir mejoras. El objetivo principal es ofrecer recursos útiles y documentación técnica tanto para usuarios interesados en conocer el proyecto como para desarrolladores que deseen colaborar activamente en su evolución.
 
 ### Mapa del sitio / Árbol de contenido
 
@@ -19,7 +19,7 @@ En este apartado encontrarás información detallada sobre el desarrollo, la arq
     - **HTML/CSS** para estructura y estilos.
     - **JS** para funcionalidades interactivas.
     - **Git** para control de versiones.
-
+```
 - **Soporte:**  
     Para reportar errores o sugerir mejoras, utiliza el sistema de issues del repositorio o contacta al autor.
 
