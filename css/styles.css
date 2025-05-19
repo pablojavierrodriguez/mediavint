@@ -1,0 +1,231 @@
+:root {
+    --azul: #064679;
+    --rosa: #ffc1c1;
+    --negro: #000000;
+    --gris: #333333;
+    --blanco: #ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    color: var(--negro);
+    background-color: var(--blanco);
+}
+header {
+    top: 0;
+    z-index: 1000;
+    background: var(--azul);
+    color: var(--blanco);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+header h1 {
+    font-size: 1.8rem;
+    font-family: 'Raleway', sans-serif;
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1.2rem;
+}
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+nav a:hover {
+    background: rgba(255,255,255,0.1);
+}
+.header-icons {
+    padding: 0.2rem;
+}
+.hero {
+    background: linear-gradient(var(--azul), var(--rosa));
+    color: var(--blanco);
+    text-align: center;
+    padding: 10rem 2rem;
+}
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.hero .cta-button {
+    background: var(--rosa);
+    color: var(--negro);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+.hero .cta-button:hover {
+    background: var(--rosa);
+}
+.section {
+    padding: 4rem 2rem;
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 4rem;
+}
+.section h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--azul);
+}
+.section p {
+    margin-bottom: 2rem;
+    color: var(--azul);
+}
+.about {
+    background: var(--rosa);
+}
+.about h4 {
+    color: var(--azul);
+}
+.services {
+    background: var(--blanco);
+}
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+.feature {
+    background: var(--blanco);
+    color: var(--azul);
+    border: 1px solid var(--azul);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.feature:hover {
+    transform: translateY(-5px);
+}
+.feature img {
+    width: 100%;
+    height: 180px;
+    object-fit:scale-down;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+.feature p {
+    color: var(--azul);
+}
+.process {
+    background-color: var(--azul);
+    color: var(--blanco)
+}
+.process h3, .process p {
+    color: var(--blanco);
+}
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.step {
+    background: var(--blanco);
+    color: var(--azul);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+.step:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.step p {
+    color: var(--azul);
+}
+.contacto {
+    background-color: var(--gris);
+}
+.contacto h3, .contacto p {
+    color: var(--blanco);
+}
+.social-links a {
+    display: inline-block;
+    margin-right: 1rem;
+    color: var(--blanco);
+    font-size: 1.5rem;
+    transition: transform 0.2s;
+}
+.social-links a:hover {
+    transform: scale(1.2);
+}
+#scrollToTop {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: var(--azul);
+  color: var(--blanco);
+  border: none;
+  border-radius: 50%;
+  padding: 0.8rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 1000;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#scrollToTop:hover {
+  background-color: var(--negro);
+  transform: scale(1.1);
+}
+footer {
+    background: var(--negro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 2rem 2rem;
+    font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+    .hero {
+        padding: 6rem 1rem;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    nav li {
+        width: 100%;
+    }
+}
