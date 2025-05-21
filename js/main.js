@@ -21,3 +21,17 @@ const scrollToTopBtn = document.getElementById("scrollToTop");
   scrollToTopBtn.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
+
+  const menuBtn = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('nav.hamburger');
+
+  menuBtn.addEventListener('click', function () {
+    navMenu.classList.toggle('active');
+    menuBtn.classList.toggle('active');
+    
+    if (menuBtn.classList.contains('active')) {
+      menuBtn.innerHTML = '✖';
+    } else {
+      menuBtn.innerHTML = '&#9776;';
+    }
+  });
