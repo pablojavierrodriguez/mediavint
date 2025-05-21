@@ -221,7 +221,7 @@ footer {
     font-size: 0.9rem;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 980px) {
     .hero h1 {
         font-size: 2.5rem;
         line-height: 3rem;
@@ -230,7 +230,7 @@ footer {
         font-size: 2rem;
     }
     .hero {
-        padding: 2rem;
+        padding: 8rem 2rem;
     }
     header {
         align-items: center;
