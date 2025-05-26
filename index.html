@@ -21,12 +21,11 @@
     <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
     <nav class="hamburger">
       <ul>
-        <li><a href="#home">Inicio</a></li>
-        <li><a href="#about">Nosotros</a></li>
-        <li><a href="#services">Servicios</a></li>
-        <!--<li><a href="#clientes">Clientes</a></li>-->
-        <li><a href="#process">Proceso</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <!--<li><a href="#home">Inicio</a></li>-->
+        <li><a href="#about">¿Quiénes?</a></li>
+        <li><a href="#services">¿Qué?</a></li>
+        <li><a href="#process">¿Cómo?</a></li>
+        <li><a href="#contacto">¿Hablamos?</a></li>
         <div class="header-icons" >
           <!--<a href="https://wa.me/5491123456789" title="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>-->
           <a href="https://www.instagram.com/mediavintservicioseditoriales/" title="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -39,20 +38,43 @@
     <section id="home" class="hero">
       <h1>Mediavint, impulsa tu negocio</h1>
       <p>Te asesoramos y ayudamos a potenciar la comunicación online de tu negocio</p>
-      <a href="#services" class="cta-button">¡Quiero saber más!</a>
+      <a href="#about" class="cta-button">¡Quiero saber más!</a>
     </section>
     <section id="about" class="section about">
-      <h3>Nosotros</h3>
+      <h3>¿Quiénes somos? - Nuestro equipo</h3>
       <p>Somos un equipo de profesionales apasionados por la comunicación y la tecnología. Nos dedicamos a ayudar a empresas y emprendedores a potenciar su presencia online y alcanzar sus objetivos comerciales teniendo una excelente comunicación digital. Convinando estudios y experiencia, nuestro enfoque se basa en la personalización y la adaptación a las necesidades específicas de cada cliente, lo que nos permite ofrecer soluciones efectivas, a medida y que se pueden escalar a medida que el negocio crece.</p>
-      <h4>Visión</h4>
+      <!--<h4>Visión</h4>
       <p>Ser la agencia nro. 1 en Comunicación y Marketing digital en el mercado de habla hispana, convirtiéndonos en la mejor opción para quienes buscan iniciar, desarrollar o potenciar su negocio.</p>
       <h4>Misión</h4>
-      <p>Ofrecer soluciones prácticas y estratégicas que ayuden a nuestros clientes a alcanzar sus objetivos y a ser intencionales en la comunicación para optimizar sus resultados.</p>
+      <p>Ofrecer soluciones prácticas y estratégicas que ayuden a nuestros clientes a alcanzar sus objetivos y a ser intencionales en la comunicación para optimizar sus resultados.</p>-->
       <h4>¿Por qué elegirnos?</h4>
-      <p>about mismos somos emprendedores, y entendemos lo complicado que puede ser desarrollar y potenciar una empresa o proyecto. Sabemos lo que necesitás y tenemos las herramientas para ayudarte. ¡Trabajemos juntos!.</p> 
+      <p>Nosotros mismos somos emprendedores, y entendemos lo complicado que puede ser desarrollar y potenciar una empresa o proyecto. Sabemos lo que necesitás y tenemos las herramientas para ayudarte. ¡Trabajemos juntos!.</p>
+  
+      <div id="equipo">
+        <button id="toggle-equipo" class="toggle-button">Conocer al equipo</button>
+        <div id="equipo-detalle" class="equipo-container">
+          <div class="miembro">
+            <img src="img/equipo/sole.jpg" alt="Foto de Julia">
+            <h3>Adriana Soledad Arce</h3>
+            <p>Comunicadora Social y Coach Ontológico. Apasionada por la comunicacion, el coaching y la estrategia digital.</p>
+            <div class="redes">
+              <a href="https://linkedin.com/in/arceadriana" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="miembro">
+            <img src="img/equipo/pablo.jpg" alt="Foto de Martín">
+            <h3>Pablo Javier Rodríguez</h3>
+            <p>Publicitario y Product Manager. Apasionado por la tecnología y gestión de productos digitales.</p>
+            <div class="redes">
+              <a href="https://linkedin.com/in/pablojavierrodriguez" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="services" class="section services">
-      <h3>Servicios</h3>
+      <h3>¿Qué hacemos? - Nuestros servicios</h3>
       <p>¡Explorá nuestro catálogo de servicios y conocé todas las opciones que tenemos para ampliar el alcance de tu negocio!</p>
       <div class="features">
         <div class="feature">
@@ -88,7 +110,7 @@
       </div>
     </section>
     <section id="process" class="section process">
-        <h3>Proceso</h3>
+        <h3>¿Cómo trabajamos? - Nuestro proceso</h3>
         <p>¡Conocé el camino que nos espera juntos para potenciar y profesionalizar tu empresa o emprendimiento!</p>
         <div class="process-steps">
           <div class="step">
@@ -113,9 +135,25 @@
           </div>
     </section>
     <section id="contacto" class="section contacto">
-      <h3>Contacto</h3>
-      <p>Si tenés un negocio y querés potenciar la comunicación digital de tu marca, podemos ayudarte.</p>
-      <p>¡Contactanos por cualquiera de los medios disponibles, y empecemos a trabajar juntos! Esperamos tu mensaje :-)</p>
+      <h3>¿Hablamos? - Ponete en contacto</h3>
+      <p>Si tenés un negocio y querés potenciar la comunicación digital de tu marca, podemos ayudarte. ¡Escribinos!</p>
+      <form id="contact-form" action="#" method="POST" novalidate>
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required placeholder="Tu nombre">
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required placeholder="tunombre@ejemplo.com">
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Tu mensaje"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="form-status"></p>
+      <p>Si no querés completar el formulario entonces contactanos por estos otros medios, y empecemos a trabajar juntos! Esperamos tu mensaje :-)</p>
       <div class="social-links">
         <!--<a href="https://wa.me/5491123456789" title="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>-->
         <a href="https://www.instagram.com/mediavintservicioseditoriales/" title="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
